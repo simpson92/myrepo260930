@@ -1,0 +1,110 @@
+* {box-sizing: border-box;}
+
+html, body {height: 100%;}
+body {margin: 0; font-family: Arial, sans-serif; color: #222;}
+
+/* 전체 */
+
+#wrap {min-height: 100vh; display: flex; flex-direction: column;}
+
+/* 상단 */
+
+#header {height: 55px; background-color: #333; color: white; display: flex; align-items: center; 
+  justify-content: space-between; padding: 0 25px;}
+
+#header h1 {margin: 0; font-size: 24px;}
+
+nav {display: flex; gap: 28px;}
+
+.btn-group {border: none; background: none; color: white; font-size: 15px; cursor: pointer;}
+.btn-group:hover {color: yellow;}
+.btn-group.active {color: yellow;}
+
+/* 메인 */
+
+#main {flex: 1; min-height: 0; overflow: hidden;}
+
+.page {display: none; height: 100%; overflow: hidden;}
+.page.active {display: block;}
+
+.page-title {height: 130px; background-color: #ddd; padding: 30px 25px;}
+.page-title h2 {margin: 0 0 12px; font-size: 28px;}
+.page-title p {margin: 0; color: #666; font-size: 14px;}
+
+/* 홈 */
+
+.welcome {height:  320px; background-color: #ddd; display: flex; flex-direction: column; 
+  align-items: center; justify-content: center; text-align: center;}
+
+.welcome h2 {margin: 0 0 20px; font-size: 28px;}
+.welcome p {margin: 0 0 25px;}
+
+#menubtn {padding: 11px 22px; background-color: white; border: 1px solid #888; cursor: pointer;}
+
+/* 공통 섹션 */
+
+.content-section {margin: 35px 25px;}
+
+.title-section {margin: 0 0 25px; padding: 6px 10px; background-color: #eee;
+  border-left: 4px solid #333; font-size: 17px;}
+
+.category-title {margin: 0 0 15px; padding: 6px 10px; background-color: #eee; 
+  border-left: 4px solid #333; font-size: 17px;}
+
+/* 메뉴 카드 */
+
+.menu-list {display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;}
+
+.menu-card {border: 1px solid #aaa; background-color: white;}
+
+.photo {height: 100px; background-color: #bbb; color: #777; display: flex; align-items: center; 
+  justify-content: center;}
+
+.menu-info {padding: 8px;}
+.menu-info h3 {margin: 0 0 5px; font-size: 13px;}
+.menu-info strong {color: red; font-size: 13px;}
+
+/* 홈 - 카페소개 */
+
+.intro-about {display: flex; gap: 70px;}
+
+.store-photo {width: 45%; height: 240px; background-color: #bbb; color: #777; display: flex; 
+  align-items: center; justify-content: center;}
+
+.intro-about-info {padding-top: 5px;}
+.intro-about-info p {margin: 0 0 20px;}
+
+/* 표 */
+
+table {border-collapse: collapse;}
+
+th, td {border: 1px solid #aaa; padding: 9px 20px; text-align: center; font-size: 13px;}
+th {background-color: #eee;}
+
+/* 소개 - 인사말 */
+
+.greeting {display: flex; gap: 80px;}
+
+.greeting-photo {width: 45%; height: 260px; background-color: #bbb; color: #777; display: flex; 
+  align-items: center; justify-content: center;}
+
+.greeting-text {padding-top: 5px;}
+.greeting-text p {margin: 0 0 15px;}
+
+/* 연혁 */
+
+.history-table {width: 100%;}
+.history-table th:first-child, .history-table td:first-child {width: 30%;}
+
+/* 매장 안내 */
+
+.store-table {width: 100%;}
+
+/* 메뉴 안내문 */
+
+.notice {margin: 25px 18px 45px; font-size: 13px;}
+
+/* 하단 */
+
+#bottom {height: 80px; background-color: #333; color: white; padding: 10px 18px; font-size: 11px;}
+#bottom p {margin: 3px 0;}
