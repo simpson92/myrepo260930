@@ -45,8 +45,7 @@ nav {display: flex; gap: 28px;}
 
 .content-section {margin: 35px 25px;}
 
-.title-section {margin: 0 0 25px; padding: 6px 10px; background-color: #eee;
-  border-left: 4px solid #333; font-size: 17px;}
+.title-section {margin: 0 0 25px; padding-bottom: 7px; border-bottom: 2px solid #222; font-size: 20px;}
 
 .category-title {margin: 0 0 15px; padding: 6px 10px; background-color: #eee; 
   border-left: 4px solid #333; font-size: 17px;}
